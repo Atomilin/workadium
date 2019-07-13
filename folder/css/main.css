@@ -1,0 +1,325 @@
+.wrapper{
+  max-width: 1100px; 
+  margin:0 auto;
+
+}
+.header{
+  height: 77px;
+  background-color: #27273e;
+}
+.header-right {
+  padding: 22px 21px 0 0;
+  float: right; 
+}
+.logo-pic {
+  padding: 21px 0 0 19px;
+  float: left; 
+}
+.site-phones {
+  float: right;
+  color: #ffffff;
+  font-size: 21px;
+  position: relative; 
+}
+.phone{
+  font-family: GothaProBol;
+  font-size: 21px;
+  letter-spacing: normal;
+  text-align: left;
+  color: #ffffff;
+}
+.work_time{
+  font-family: OpenSans;
+  font-size: 14px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  letter-spacing: normal;
+  text-align: right;
+  color: rgba(236, 30, 121, 0.7);
+}
+.header_banner{
+  height: 359px;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+}
+.site-conteiner{
+  display:block;
+  position:relative;
+  padding: 425px 0 0 0;
+  margin-bottom: 75px;
+}
+.container-inner {
+  flex: 1 0 auto; 
+}
+.site-sidebar {
+  position: relative;
+  padding-bottom: 30px;
+  float: left; 
+}
+.folder-shared{
+  display:block;
+  position:relative;
+  margin: 0 auto;
+  list-style-type: none;
+}
+.menu{
+  margin-bottom: 20px;
+}
+.link_main:link{
+  width: 40;
+  height: 40;
+  background-image: url(../../img/main_icon.png);
+  background-repeat: no-repeat;
+  vertical-align: middle;
+  padding-left:20px;
+  font-family: GothaProBol;
+  font-size: 12px;
+  text-decoration: none;
+  color: #ec1e79;
+}
+.link_main:active{
+  background-image: url(../../img/main_icon_black.png);
+  background-repeat: no-repeat;
+  color: black;
+}
+.link_feed:link{
+  background-image: url(../../img/feed_icon.png);
+  background-repeat: no-repeat;
+  padding-left:20px;
+  font-family: GothaProBol;
+  font-size: 12px;
+  text-decoration: none;
+  color: #ec1e79;
+}
+.link_feed:active{
+  background-image: url(../../img/feed_icon_black.png);
+  background-repeat: no-repeat;
+  color: black;
+}
+.link_wallet:link{
+  background-image: url(../../img/wallet_icon.png);
+  background-repeat: no-repeat;
+  padding-left:20px;
+  font-family: GothaProBol;
+  font-size: 12px;
+  text-decoration: none;
+  color: #ec1e79;
+}
+.link_wallet:active{
+  background-image: url(../../img/wallet_icon_black.png);
+  background-repeat: no-repeat;
+  color: black;
+}
+.site-main{
+  padding-left: 205px; 
+  width: 100%;
+}
+.site-main__inner {
+  position: relative;
+}
+.main_title{
+  max-width: 600px;
+  font-family: GothaProBol;
+  font-size: 49px;
+  letter-spacing: normal;
+  text-align: left;
+  color: #221f1f;
+  margin-bottom: 75px;
+}
+.features{
+  display: block;
+  float: left;
+  max-width: 195px;;
+  margin-right: 68px;
+}
+.block_image{
+  margin: 0 auto;
+  margin-bottom: 35px;
+  vertical-align: middle;
+  text-align: center;
+  white-space: nowrap;
+}
+.block_h3{
+  font-family: GothaProBol;
+  font-size: 11px;
+  letter-spacing: 2.64px;
+  text-align: center;
+  color: #212121;
+  margin-bottom: 28px
+}
+.block-text{
+  text-align: center;
+}
+.block-text-style{
+  font-family: GothaProLig;
+  font-size: 18px;
+  letter-spacing: normal;
+  color: #221f1f
+}
+.block-folder{
+  margin: 0 auto;
+  padding: 20px;
+  color: #cc3366;
+}
+.block-text-align{
+  margin-left: 10px;
+  text-align: left;
+}
+.news{
+  display: block;
+  position: relative;
+  margin-top: 443px;
+}
+.new_news{
+  display: inline-block;
+  position: relative;
+  max-width: 880px;
+  max-height: 170px;
+  border-bottom:2px solid #f5f5f5;
+  padding-bottom: 24px;
+  margin-bottom: 56px;
+}
+.new_news_icon{
+  float: left;
+}
+.news_icon{
+  height: 160px;
+  width: 160px;
+  border-radius: 100px;
+}
+.new-news-text{
+  display: block;
+  float: left; 
+  max-width: 700px;
+  padding: 0 0 0 20px;
+}
+.news-data{
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: left;
+  color: #656464;
+}
+.news-header{
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.17;
+  letter-spacing: normal;
+  text-align: left;
+  color: #221f1f;
+}
+.news-body{
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.67;
+  letter-spacing: normal;
+  text-align: left;
+  color: #221f1f;
+}
+.page_navigation{
+  display:inline-block;
+  position: relative;
+  max-width: 880px;
+  padding-left: 278px;
+}
+.page_text{
+  float: left;
+  font-family: GothaProLig;
+  font-size: 14px;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: left;
+  color: #656464;
+}
+.pages{
+  margin-left: 20px;
+  float: left;
+  font-family: GothaProBol;
+  font-size: 14px;
+  line-height: 1.5;
+  letter-spacing: normal;
+}
+.pages_item_disabled{
+  text-decoration: none;
+  text-align: center;
+  color: gray;
+  margin-right: 20px;
+}
+.pages_item{
+  text-decoration: none;
+  text-align: center;
+  color: #221f1f;
+  margin-right: 20px;
+}
+.pages_item:active{
+  background-image: url(../../img/navigation_rectangle.png);
+  background-repeat: no-repeat;
+  color:white;
+}
+.footer_block{
+  display: inline-block;
+}
+.footer-text{
+  padding: 14px 0 0 19px;
+  width: 264px;
+  float: left;
+  font-family: GothaProLig;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: normal;
+  color: #ffffff;
+}
+.footer-pic{
+  float: left;
+  padding:14px 0 0 216px;
+}
+.footer_social_web{
+  display: block;
+  float: right;
+  padding: 20px 20px 0 0;
+}
+.footer_social_web_text{
+  font-family: GothaProBol;
+  font-size: 14px;
+  letter-spacing: normal;
+  text-align: left;
+  color: #ffffff;
+  margin-bottom: 10px;
+
+}
+.footer_social_web_img{
+  display: block;
+  position: initial;
+  margin: 0 auto;
+  list-style-type: none;
+  padding: 0;
+}
+.social_web_img_background{
+  display:inline-block;
+  width: 20px;
+  height: 20px;
+  background-color: #d4d4d8;
+  border-radius: 100px;
+  margin-right: 10px;
+}
+.social_web_link{
+  display: block;
+  position: relative;
+  margin-right: auto;
+  margin-left: auto;
+}
+.web_img{
+  vertical-align:middle;
+  padding-left: 3px;
+}
