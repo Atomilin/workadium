@@ -1,34 +1,33 @@
 .wrapper{
-  max-width: 1100px; 
+  min-width: 1100px; 
   margin:0 auto;
 
 }
 .header{
-  height: 77px;
   background-color: #27273e;
+  margin-bottom: 70px;
 }
-.header-right {
-  padding: 22px 21px 0 0;
-  float: right; 
+.logo {
+  float: left; 
 }
 .logo-pic {
   padding: 21px 0 0 19px;
-  float: left; 
 }
-.site-phones {
+.contacts {
+  padding: 22px 21px 0 0;
   float: right;
   color: #ffffff;
   font-size: 21px;
   position: relative; 
 }
-.phone{
+.contacts__phone{
   font-family: GothaProBol;
   font-size: 21px;
   letter-spacing: normal;
   text-align: left;
   color: #ffffff;
 }
-.work_time{
+.contacts__work-time{
   font-family: OpenSans;
   font-size: 14px;
   font-weight: bold;
@@ -38,92 +37,66 @@
   text-align: right;
   color: rgba(236, 30, 121, 0.7);
 }
-.header_banner{
-  height: 359px;
+.banner{ 
   background-repeat: no-repeat;
   margin: 0 auto;
 }
 .site-conteiner{
   display:block;
   position:relative;
-  padding: 425px 0 0 0;
-  margin-bottom: 75px;
+  max-width: 1100px;
+  margin: 0 auto;
 }
 .container-inner {
   flex: 1 0 auto; 
 }
-.site-sidebar {
-  position: relative;
-  padding-bottom: 30px;
+.sidebar {
+  width: 180px;
   float: left; 
 }
-.folder-shared{
+.menu{
+  margin: 0 auto;
+}
+.menu__item{
   display:block;
   position:relative;
   margin: 0 auto;
   list-style-type: none;
 }
-.menu{
-  margin-bottom: 20px;
+.menu__item{
+  margin-bottom: 24px;
 }
-.link_main:link{
+.menu__link{
+  background-repeat: no-repeat;
+  background-position: left center;
+  padding-left:40px;
+  font-family: GothaProBol;
+  font-size: 12px;
+  text-decoration: none;
+  display: block;
+  line-height: 20px;
+  color: #ec1e79;
+}
+
+.menu__link--main{
   background-image: url(../../img/main_icon.png);
-  background-repeat: no-repeat;
-  background-position: left center;
-  padding-left:40px;
-  font-family: GothaProBol;
-  font-size: 12px;
-  text-decoration: none;
-  display: block;
-  line-height: 20px;
-  color: #ec1e79;
 }
-.link_main:active{
+.menu__link--main.menu__link--active, .menu__link--main:hover{
   background-image: url(../../img/main_icon_black.png);
-  background-repeat: no-repeat;
-  background-position: left center;
-  display: block;
-  line-height: 20px;
-  color: black;
 }
-.link_feed:link{
+.menu__link--feed{
   background-image: url(../../img/feed_icon.png);
-  background-repeat: no-repeat;
-  background-position: left center;
-  padding-left:40px;
-  font-family: GothaProBol;
-  font-size: 12px;
-  text-decoration: none;
-  display: block;
-  line-height: 20px;
-  color: #ec1e79;
 }
-.link_feed:active{
+.menu__link--feed.menu__link--active, .menu__link--feed:hover{
   background-image: url(../../img/feed_icon_black.png);
-  background-repeat: no-repeat;
-  background-position: left center;
-  display: block;
-  line-height: 20px;
-  color: black;
 }
-.link_wallet:link{
+.menu__link--wallet{
   background-image: url(../../img/wallet_icon.png);
-  background-repeat: no-repeat;
-  background-position: left center;
-  padding-left:40px;
-  font-family: GothaProBol;
-  font-size: 12px;
-  text-decoration: none;
-  display: block;
-  line-height: 20px;
-  color: #ec1e79;
 }
-.link_wallet:active{
+.menu__link--wallet.menu__link--active, .menu__link--wallet:hover{
   background-image: url(../../img/wallet_icon_black.png);
-  background-repeat: no-repeat;
-  background-position: left center;
-  display: block;
-  line-height: 20px;
+}
+.menu__link--active, .menu__link:hover{
   color: black;
 }
 .site-main{
@@ -132,8 +105,9 @@
 }
 .site-main__inner {
   position: relative;
+  margin-bottom: 90px;
 }
-.main_title{
+.main-title{
   max-width: 600px;
   font-family: GothaProBol;
   font-size: 49px;
@@ -143,77 +117,79 @@
   margin-bottom: 75px;
 }
 .features{
-  display: block;
-  float: left;
-  max-width: 215px;;
-  margin-right: 68px;
-  line-height: 2;
-  margin-bottom: 90px;
+  display: inline-block;
+  list-style-type: none;
+  margin: 0 auto;
 }
-.block_image{
+.features__content{
+  text-align: center;
+  width: 225px;
+  margin-right: 70px; 
+  float: left;
+}
+.features__image{
   margin: 0 auto;
   margin-bottom: 35px;
   vertical-align: middle;
   text-align: center;
   white-space: nowrap;
 }
-.block_h3{
+.features__title{
   font-family: GothaProBol;
   font-size: 11px;
   letter-spacing: 2.64px;
   text-align: center;
   color: #212121;
-  margin-bottom: 28px
+  margin-bottom: 28px;
+  text-transform: uppercase;
 }
 .block-text{
   text-align: center;
 }
-.block-text-style{
+.folder__li{
+  padding-left: 25px;
+}
+.folder__text{
+  max-width: 200px;
   font-family: GothaProLig;
   font-size: 18px;
-  letter-spacing: normal;
-  padding-left: 25px;
   color: #221f1f
 }
-.block-folder{
-  margin: 0 auto;
+.features__folder{
   padding-left: 20px;
   text-align: justify;
+  line-height:2;
   color: #cc3366;
 }
 .block-text-align{
   margin-left: 10px;
   text-align: left;
 }
-.news{
+.site-main__content{
   display: block;
   position: relative;
-  margin-top: 443px;
 }
-.new_news{
+.content__news{
   display: inline-block;
-  position: relative;
-  max-width: 880px;
-  max-height: 170px;
   border-bottom:2px solid #f5f5f5;
   padding-bottom: 24px;
   margin-bottom: 56px;
 }
-.new_news_icon{
+.news__avatar{
   float: left;
 }
-.news_icon{
+.avatar__pic{
   height: 160px;
   width: 160px;
   border-radius: 100px;
 }
-.new-news-text{
+.news__text{
   display: block;
   float: left; 
   max-width: 700px;
   padding: 0 0 0 20px;
 }
-.news-data{
+.text__data{
   font-family: Roboto;
   font-size: 14px;
   line-height: 1.5;
@@ -221,7 +197,7 @@
   text-align: left;
   color: #656464;
 }
-.news-header{
+.text__header{
   font-family: Roboto;
   font-size: 18px;
   font-weight: bold;
@@ -232,7 +208,7 @@
   text-align: left;
   color: #221f1f;
 }
-.news-body{
+.text__body{
   font-family: Roboto;
   font-size: 18px;
   font-weight: 300;
@@ -243,27 +219,23 @@
   text-align: left;
   color: #221f1f;
 }
-.page_navigation{
-  position: relative;
-  max-width: 880px;
+.site-main__page-navigation{
   padding-left: 278px;
 }
-.page_text{
+.page-navigation__text{
   float: left;
   font-family: GothaProLig;
   font-size: 14px;
-  line-height: 1.5;
-  letter-spacing: normal;
-  text-align: left;
   color: #656464;
+  margin-right: 20px;
+  height: 25px;
+  line-height: 25px;
+  text-align: center;
 }
-.pages{
-  margin-left: 20px;
-  float: left;
+.page-navigation__pages{
   font-family: GothaProBol;
   font-size: 14px;
-  line-height: 1.5;
-  letter-spacing: normal;
+  margin-bottom: 70px;
 }
 .pages_item_disabled{
   text-decoration: none;
@@ -274,25 +246,30 @@
   display: inline-block;
   border-radius: 3px;
 }
-.pages_item{
+.pages__item{
   text-decoration: none;
-  text-align: center;
   color: #221f1f;
   height: 25px;
   width: 25px;
   display: inline-block;
   border-radius: 3px;
+  line-height: 25px;
   text-align: center;
 }
-.pages_item:active{
+
+.pages__item--active, .pages__item:hover{
   background-image: url(../../img/navigation_rectangle.png);
   background-repeat: no-repeat;
   color:white;
 }
+.footer{
+  height: 77px;
+  background-color: #27273e;
+}
 .footer_block{
   display: inline-block;
 }
-.footer-text{
+.footer__text{
   padding: 14px 0 0 19px;
   width: 264px;
   float: left;
@@ -302,16 +279,16 @@
   letter-spacing: normal;
   color: #ffffff;
 }
-.footer-pic{
+.footer__pic{
   float: left;
   padding:14px 0 0 216px;
 }
-.footer_social_web{
+.footer__social-web{
   display: block;
   float: right;
   padding: 20px 20px 0 0;
 }
-.footer_social_web_text{
+.social-web__text{
   font-family: GothaProBol;
   font-size: 14px;
   letter-spacing: normal;
@@ -320,17 +297,18 @@
   margin-bottom: 10px;
 
 }
-.footer_social_web_img{
+.social-web__img{
   display: block;
   position: initial;
   margin: 0 auto;
   list-style-type: none;
   padding: 0;
 }
-.social_web_img_background{
+.img__background{
   display:inline-block;
   width: 20px;
   height: 20px;
+  line-height: 20px;
   background-color: #d8d8d8;
   border-radius: 100px;
   margin-right: 10px;
@@ -346,118 +324,62 @@
   vertical-align:middle;
   padding-left: 3px;
 }
-.social_web_link_vk:link{
+.link{
+  background-repeat: no-repeat;
+  display: block;
+  background-position: center center;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.link--vk{
   background-image: url(../../img/web-icon/vk.png);
-  background-repeat: no-repeat;
-  display: block;
-  background-position: center center;
-  text-indent: 100%;
-  white-space: nowrap;
-  overflow: hidden;
 }
-.social_web_link_vk:active{
+.link--vk.link--active, .link--vk:hover{
   background-image: url(../../img/web-icon/vk.png);
-  background-repeat: no-repeat;
-  display: block;
-  background-position: center center;
-  text-indent: 100%;
-  white-space: nowrap;
-  overflow: hidden;
   width: 20px;
   height: 20px;
   background-color: #ec1e79;
   border-radius: 100px;
-  margin-right: 10px;
 }
-.social_web_link_fb:link{
+.link--fb{
   background-image: url(../../img/web-icon/fb.png);
-  background-repeat: no-repeat;
-  display: block;
-  background-position: center center;
-  text-indent: 100%;
-  white-space: nowrap;
-  overflow: hidden;
 }
-.social_web_link_fb:active{
+.link--fb.link--active, .link--fb:hover{
   background-image: url(../../img/web-icon/fb.png);
-  background-repeat: no-repeat;
-  display: block;
-  background-position: center center;
-  text-indent: 100%;
-  white-space: nowrap;
-  overflow: hidden;
   width: 20px;
   height: 20px;
   background-color: #ec1e79;
   border-radius: 100px;
-  margin-right: 10px;
 }
-.social_web_link_g:link{
+.link--g{
   background-image: url(../../img/web-icon/google.png);
-  background-repeat: no-repeat;
-  display: block;
-  background-position: center center;
-  text-indent: 100%;
-  white-space: nowrap;
-  overflow: hidden;
 }
-.social_web_link_g:active{
+.link--g.link--active, .link--g:hover{
   background-image: url(../../img/web-icon/google.png);
-  background-repeat: no-repeat;
-  display: block;
-  background-position: center center;
-  text-indent: 100%;
-  white-space: nowrap;
-  overflow: hidden;
   width: 20px;
   height: 20px;
   background-color: #ec1e79;
   border-radius: 100px;
-  margin-right: 10px;
 }
-.social_web_link_tw:link{
+.link--tw{
   background-image: url(../../img/web-icon/twitter.png);
-  background-repeat: no-repeat;
-  display: block;
-  background-position: center center;
-  text-indent: 100%;
-  white-space: nowrap;
-  overflow: hidden;
 }
-.social_web_link_tw:active{
+.link--tw.link--active, .link--tw:hover{
   background-image: url(../../img/web-icon/twitter.png);
-  background-repeat: no-repeat;
-  display: block;
-  background-position: center center;
-  text-indent: 100%;
-  white-space: nowrap;
-  overflow: hidden;
   width: 20px;
   height: 20px;
   background-color: #ec1e79;
   border-radius: 100px;
-  margin-right: 10px;
 }
-.social_web_link_email:link{
+.link--email{
   background-image: url(../../img/web-icon/mail.png);
-  background-repeat: no-repeat;
-  display: block;
-  background-position: center center;
-  text-indent: 100%;
-  white-space: nowrap;
-  overflow: hidden;
 }
-.social_web_link_email:active{
+.link--email.link--active, .link--email:hover{
   background-image: url(../../img/web-icon/mail.png);
-  background-repeat: no-repeat;
-  display: block;
-  background-position: center center;
-  text-indent: 100%;
-  white-space: nowrap;
-  overflow: hidden;
   width: 20px;
   height: 20px;
   background-color: #ec1e79;
   border-radius: 100px;
-  margin-right: 10px;
 }
