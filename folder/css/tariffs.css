@@ -1,0 +1,83 @@
+.offer__list{
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 75px;
+}
+.offer__item{
+    margin-right: 55px;
+    width: 250px;
+    margin-bottom: 50px;
+}
+.item{
+    text-align: center;
+}
+.offer__avatar{
+    max-width: 250px;
+    overflow: hidden;
+    display: inline-block;
+    position: relative;
+}
+.offer__avatar--elem{
+    display: block;
+    position: relative;
+    max-width: 100%;
+}
+.offer__avatar--text{
+    font-family: GothaProBol;
+    font-size: 24px;
+    line-height: 0.88;
+    max-width: 100%;
+    letter-spacing: normal;
+    text-align: center;
+    color: #5dd1f8;
+}
+.offer__avatar span, .vip{
+    display:inline-block;
+    position:absolute;
+    width: 251px;
+    height: 167px;
+    top:0px;
+    left:0px;
+    font-family: GothaProBol;
+    font-size: 24px;
+    line-height: 0.88;
+    text-align: center;
+    color: #5dd1f8;
+    text-transform: uppercase;
+    /* Фон */
+    background-color:#27273e;
+    opacity: 0.85;
+    line-height: 167px;
+}
+.offer__avatar span:hover{
+    opacity: 0;
+    cursor: pointer;
+}
+.offer__title{
+    font-family: GothaProBol;
+    font-size: 18px;
+    text-align: center;
+}
+.offer__text{
+    font-family: GothaProLig;
+    font-size: 14px;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: center;
+    color: #221f1f;
+}
+.offer__picture{
+    margin-bottom: 30px;
+}
+.vip{
+    color: #ec1e79;
+}
+.avatar--client{
+    filter: grayscale(100%); 
+}
+.avatar--client:hover{
+    filter: grayscale(0%); 
+    cursor: pointer;
+}
