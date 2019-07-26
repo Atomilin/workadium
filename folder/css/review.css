@@ -12,18 +12,20 @@
     margin-bottom: 60px;
 }
 .attention__text{
-    font-family: GothaProLig;
+    font-family: Gotha;
+    font-weight: normal;
     font-size: 18px;
     max-width: 610px;
     line-height: 1.67;
     letter-spacing: normal;
     text-align: left;
     margin: 0 auto;
-    padding-top: 50px;
+    padding: 50px 0;
     color: #ffffff;
 }
 .attention__text--bold{
-    font-family: GothaProBol;
+    font-family: Gotha;
+    font-weight: bold;
     color: #ec1e79;
 }
 .form{
@@ -38,7 +40,8 @@
     margin-bottom: 50px;
 }
 .form__title{
-    font-family: GothaProBol;
+    font-family: Gotha;
+    font-weight: bold;
     font-size: 49px;
     color: #221f1f;
     margin-bottom: 30px;
@@ -59,7 +62,8 @@
 }
 .form__subtitle{
     display: block;
-    font-family: GothaProLig;
+    font-family: Gotha;
+    font-weight: normal;
     font-size: 14px;
     text-align: left;
     color: #221f1f;
@@ -67,7 +71,9 @@
 }
 .form__input{
     outline: none;
-    font-family: GothaProLig;
+    box-sizing: border-box;
+    font-family: Gotha;
+    font-weight: normal;
     border: 1px solid transparent;
     background-color: #ffffff;
     font-size: 14px;
@@ -98,7 +104,8 @@
     border-radius: 3px;
     background-color: #27273e;
     color: #ffffff;
-    font-family: GothaProBol;
+    font-family: Gotha;
+    font-weight: bold;
     font-size: 12px;
     text-transform: uppercase;
     letter-spacing: 2.4px;

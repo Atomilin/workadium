@@ -1,0 +1,51 @@
+body {
+    background-image: url(../../img/intro/background.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.conteiner{
+    position: absolute; 
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+    height: 100%;
+}
+
+.intro__img{
+    padding-left: 11px;
+    margin-bottom: 30px;
+}
+.intro__enter{
+    width: 182px;
+    height: 44px;
+    border: solid 3px #ec1e79;
+    cursor: pointer;
+    text-align: center;
+    line-height: 44px;
+}
+.intro__enter a {
+    display: flex;
+    font-size: 12px;
+    letter-spacing: 1.2px;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #ec1e79;
+   }
+.intro__enter a:hover{
+    color: white;
+    border: solid 1px #ec1e79;
+    background-color: #ec1e79;
+    cursor: pointer;
+}
+.enter__text{
+    font-family: Gotha;
+    font-weight: bold;
+    font-size: 12px;
+    letter-spacing: 1.2px;
+    text-align: left;
+    text-transform: uppercase;
+    text-decoration: none;
+}
