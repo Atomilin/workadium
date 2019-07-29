@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Тарифы</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <link href="../../node_modules/normalize.css/normalize.css" type="text/css" rel="stylesheet" media="all" />
@@ -18,43 +19,86 @@
         <header class="header-second">
             <div class="site-conteiner header__container">
                 <img src="../../img/header_logo.png" alt="Логотип" class="logo-pic">
-                <div class="contacts">
-                    <div class="contacts__phone">
-                        8 (800) 00-392-10
-                    </div>
-                    <div class="contacts__work-time">
-                        График работы
-                    </div>
-                </div>
+                <address class="contacts">
+                        <a href="tel:+78000039210" class="contacts__phone">8 (800) 00-392-10</a>
+                        <div class="touch__block">
+                            <p class="touch__text">График работы</p>
+                            <ul class="touch__list">
+                                <li class="touch__item touch__item--color">пн-вс: 09:00-20:00</li>
+                                <li class="touch__item">обед: 14:00-14:30</li>
+                            </ul>
+                        </div>
+                    </address>
             </div>
         </header>
-        <div class="site-conteiner">
+        <div class="site-conteiner ">
             <aside class="sidebar">
-                    <nav class="nav">
-                        <ul class="menu">
-                            <li class="menu__item">
-                                <a class="menu__link menu__link--main" href="../pages/main.html" alt="ссылка на страницу Главная">ГЛАВНАЯ</a>
+                <selection class="partner">
+                    <h2 class="features__title features__title--top">Партнёры</h2>
+                    <ul class="partner__list">
+                        <li class="partner__avatar">
+                            <img class="partner__img" src="../../img/tariffs/partners/logo-1.png" alt="Партнер Винтер Канцелярия">
+                        </li>
+                        <li class="partner__avatar">
+                            <img class="partner__img" src="../../img/tariffs/partners/logo-4.png" alt="Партнер Тишкин">
+                        </li>
+                        <li class="partner__avatar">
+                            <img class="partner__img" src="../../img/tariffs/partners/logo-2.png" alt="Партнер DROP">
+                        </li>
+                        <li class="partner__avatar">
+                            <img class="partner__img" src="../../img/tariffs/partners/logo-3.png" alt="Партнер Библиотека Анна Ахматова">
+                        </li>
+                        <li class="partner__avatar">
+                            <img class="partner__img" src="../../img/tariffs/partners/logo-5.png" alt="Партнер Пуфок">
+                        </li>
+                        <li class="partner__avatar">
+                            <img class="partner__img" src="../../img/tariffs/partners/logo-6.png" alt="Партнер Авантаж">
+                        </li>
+                    </ul>
+                </selection>
+                <div class="social-web">
+                        <div class="social-web__text"> Наши социальные сети
+                        </div>
+                        <ul class="social-web__img">
+                            <li class="background">
+                                <a href="#" class="link link--vk link--active" alt="Ссылка на группу в Вконтакте">Вконтакте</a>
                             </li>
-                            <li class="menu__item">
-                                <a class="menu__link menu__link--feed" href="../pages/review.html" alt="ссылка на страницу Отзывы">ОТЗЫВЫ</a>
+                            <li class="background">
+                                <a href="#" class="link link--fb" alt="Ссылка на группу в Фейсбуке">Фейсбук</a>
                             </li>
-                            <li class="menu__item">
-                                <a class="menu__link menu__link--wallet menu__link--active" href="tariffs.html" alt="ссылка на страницу Трафик">ТАРИФЫ</a>
+                            <li class="background">
+                                <a href="#" class="link link--g" alt="Ссылка на группу в гугл+">Гугл+ </a>
+                            </li>
+                            <li class="background">
+                                <a href="#" class="link link--tw" alt="Ссылка на группу в Твиттер">Твиттер</a>
+                            </li>
+                            <li class="background">
+                                <a href="#" class="link link--email" alt="Ссылка на электронную почту">Электронная почта</a>
                             </li>
                         </ul>
-                    </nav>
+                </div>
             </aside>
-            <main class="site-main">
-                <selection class="site-main__content">
-                    <h3 class="way-text__pink">Главная<span class="way-text"> / Тарифы</span></h3>
-                    <h1 class="main-title">Тарифы</h1>
-                </selection>
+            <main class="site-main site-main--marginleft">
+                <nav class="nav">
+                    <ul class="menu menu--other">
+                        <li class="menu__item">
+                            <a class="menu__link-other menu__link--main-other" href="../pages/main.html" alt="ссылка на страницу Главная">ГЛАВНАЯ</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link-other menu__link--feed-other" href="../pages/review.html" alt="ссылка на страницу Отзывы">ОТЗЫВЫ</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link-other menu__link--wallet-other menu__link-other--active" href="tariffs.html" alt="ссылка на страницу Трафик">ТАРИФЫ</a>
+                        </li>
+                    </ul>
+                </nav>
+                <h1 class="main-title main-title--other">Тарифы</h1>
                 <selection class="offer">
                     <ul class="offer__list">
                         <li class="offer__item item">
                             <div class="offer__picture">
                                 <div class="offer__avatar">
-                                    <img class="offer__avatar--elem" src="../../img/tariffs/alone.png" alt="Тариф для одного">
+                                    <img class="offer__avatar--elem" src="../../img/tariffs/alone.jpg" alt="Тариф для одного">
                                     <div class="overlay">
                                         <span class="overlay__text">«ОДИН»</span>
                                     </div>
@@ -70,7 +114,7 @@
                         <li class="offer__item item">
                             <div class="offer__picture">
                                 <div class="offer__avatar">
-                                    <img class="offer__avatar--elem" src="../../img/tariffs/troe.png" alt="Тариф для троих">
+                                    <img class="offer__avatar--elem" src="../../img/tariffs/troe.jpg" alt="Тариф для троих">
                                     <div class="overlay">
                                         <span class="overlay__text">«Трое»</span>
                                     </div>
@@ -86,7 +130,7 @@
                         <li class="offer__item item">
                             <div class="offer__picture">
                                 <div class="offer__avatar">
-                                    <img class="offer__avatar--elem" src="../../img/tariffs/gangbang.png" alt="Тариф 10 рабочих мест на 10 дней">
+                                    <img class="offer__avatar--elem" src="../../img/tariffs/gangbang.jpg" alt="Тариф 10 рабочих мест на 10 дней">
                                     <div class="overlay">
                                         <span class="overlay__text">«10-10»</span>
                                     </div>
@@ -102,7 +146,7 @@
                         <li class="offer__item item">
                             <div class="offer__picture">
                                 <div class="offer__avatar">
-                                    <img class="offer__avatar--elem" src="../../img/tariffs/vipalone.png" alt="Безлимит на одного человека">
+                                    <img class="offer__avatar--elem" src="../../img/tariffs/vipalone.jpg" alt="Безлимит на одного человека">
                                     <div class="overlay">
                                         <span class="overlay__vip">VIP</span>
                                         <span class="overlay__text">«Безлимит на одного»</span>
@@ -119,7 +163,7 @@
                         <li class="offer__item item">
                             <div class="offer__picture">
                                 <div class="offer__avatar">
-                                    <img class="offer__avatar--elem" src="../../img/tariffs/vipallinclude.png" alt="Тариф Все включено">
+                                    <img class="offer__avatar--elem" src="../../img/tariffs/vipallinclude.jpg" alt="Тариф Все включено">
                                     <div class="overlay">
                                         <span class="overlay__vip">VIP</span>
                                         <span class="overlay__text">«Все включено»</span>
@@ -136,7 +180,7 @@
                         <li class="offer__item item">
                             <div class="offer__picture">
                                 <div class="offer__avatar">
-                                    <img class="offer__avatar--elem" src="../../img/tariffs/haguecourt.png" alt="Тариф переговоры">
+                                    <img class="offer__avatar--elem" src="../../img/tariffs/haguecourt.jpg" alt="Тариф переговоры">
                                     <div class="overlay">
                                         <span class="overlay__text">«Переговоры»</span>
                                     </div>
@@ -151,29 +195,8 @@
                         </li>
                     </ul>
                 </selection>
-                <h1 class="main-title">Партнёры</h1>
-                <selection class="partner">
-                    <ul class="partner__list">
-                        <li class="partner__avatar">
-                            <img class="partner__img" src="../../img/tariffs/partners/logo-1.png" alt="Партнер Винтер Канцелярия">
-                        </li>
-                        <li class="partner__avatar">
-                            <img class="partner__img" src="../../img/tariffs/partners/logo-2.png" alt="Партнер DROP">
-                        </li>
-                        <li class="partner__avatar">
-                            <img class="partner__img" src="../../img/tariffs/partners/logo-3.png" alt="Партнер Библиотека Анна Ахматова">
-                        </li>
-                        <li class="partner__avatar">
-                            <img class="partner__img" src="../../img/tariffs/partners/logo-4.png" alt="Партнер Тишкин">
-                        </li>
-                        <li class="partner__avatar">
-                            <img class="partner__img" src="../../img/tariffs/partners/logo-5.png" alt="Партнер Пуфок">
-                        </li>
-                        <li class="partner__avatar">
-                            <img class="partner__img" src="../../img/tariffs/partners/logo-6.png" alt="Партнер Авантаж">
-                        </li>
-                    </ul>
-                </selection>
+
+
             </main>
         </div>
         <footer class="footer">
@@ -181,27 +204,6 @@
                 <div class="footer__text">Сделано с любовью и старанием на курсе «HTML + CSS» в <b>LoftSchool</b>. Автор работы: <b>Прохладов Вадим</b>
                 </div>
                 <img class="footer__pic" src="../../img/header_logo.png" alt="Логотип"/>
-                <div class="social-web">
-                    <div class="social-web__text"> Наши социальные сети
-                    </div>
-                    <ul class="social-web__img">
-                        <li class="background">
-                            <a href="#" class="link link--vk link--active" alt="Ссылка на группу в Вконтакте">Вконтакте</a>
-                        </li>
-                        <li class="background">
-                            <a href="#" class="link link--fb" alt="Ссылка на группу в Фейсбуке">Фейсбук</a>
-                        </li>
-                        <li class="background">
-                            <a href="#" class="link link--g" alt="Ссылка на группу в гугл+">Гугл+ </a>
-                        </li>
-                        <li class="background">
-                            <a href="#" class="link link--tw" alt="Ссылка на группу в Твиттер">Твиттер</a>
-                        </li>
-                        <li class="background">
-                            <a href="#" class="link link--email" alt="Ссылка на электронную почту">Электронная почта</a>
-                        </li>
-                    </ul>
-                </div>
             </div>
         </footer>
     </div>

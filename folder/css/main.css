@@ -1,5 +1,7 @@
 body,
 html {
+  font-family: Gotha;
+  font-weight: bold;
   height: 100%;
   width: 100%;
 }
@@ -10,7 +12,9 @@ li {
   padding: 0;
   list-style: none;
 }
-
+*{
+  box-sizing: border-box;
+}
 h1,
 h2,
 h3,
@@ -36,26 +40,19 @@ h5 {
 .logo-pic {}
 
 .contacts {
+  font-style: normal;
+  margin: 17px 19px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
   color: #ffffff;
   font-size: 21px;
 }
 
 .contacts__phone {
-  font-family: Gotha;
-  font-weight: bold;
   font-size: 21px;
+  text-decoration: none;
   color: #ffffff;
-}
-
-.contacts__work-time {
-  font-family: OpenSans;
-  font-size: 14px;
-  font-weight: bold;
-  font-style: normal;
-  font-stretch: normal;
-  letter-spacing: normal;
-  text-align: right;
-  color: rgba(236, 30, 121, 0.7);
 }
 
 .banner {
@@ -84,17 +81,14 @@ h5 {
 }
 
 .sidebar {
-  width: 180px;
 }
 
 .menu {
   display: flex;
-  flex-direction: column;
-  margin: 0 auto;
 }
 
 .menu__item {
-  margin-bottom: 24px;
+margin-left: 90px;
 }
 
 .menu__item:last-child {
@@ -105,80 +99,261 @@ h5 {
   background-repeat: no-repeat;
   background-position: left center;
   padding-left: 40px;
-  font-family: Gotha;
-  font-weight: bold;
+  font-size: 12px;
+  text-decoration: none;
+  display: flex;
+  line-height: 20px;
+  color: white;
+}
+.menu__link--active,
+.menu__link:hover {
+  color: #ec1e79;
+  transition: .4s;
+}
+/*ссылка главная*/
+
+.menu__link--main:before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 43px;
+  left: 27%;
+  transform: translate(-15%,-3%);
+  width: 17px; height: 15px;
+  background: url('../../img/css_sprites.png') -84px -86px;
+}
+.menu__link--main:hover:before{
+  opacity: 0;
+}
+
+.menu__link--main.menu__link--active,
+.menu__link--main:hover:after{
+  opacity: 1;
+}
+
+.menu__link--main:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 43px;
+  left: 27%;
+  transform: translate(-15%,-3%);
+  width: 17px; height: 15px;
+  background: url('../../img/css_sprites.png') -10px -86px;
+  opacity: 0;
+}
+/*ссылка отзывы*/
+
+.menu__link--feed:before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 44px;
+  left: 45%;
+  transform: translate(-15%,-18%);
+  width: 20px; height: 18px;
+  background: url('../../img/css_sprites.png') -10px -48px;
+}
+.menu__link--feed:hover:before{
+  opacity: 0;
+}
+
+.menu__link--feed:hover:after{
+  opacity: 1;
+}
+
+.menu__link--feed:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 44px;
+  left: 45%;
+  transform: translate(-15%,-18%);
+  width: 20px; height: 18px;
+  background: url('../../img/css_sprites.png') -10px -10px;
+  opacity: 0;
+}
+
+/*ссылка тарифы*/
+
+.menu__link--wallet:before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 45px;
+  left: 62%;
+  transform: translate(-44%,-6%);
+  width: 19px; height: 16px;
+  background: url('../../img/css_sprites.png') -90px -46px;
+}
+.menu__link--wallet:hover:before{
+  opacity: 0;
+}
+
+.menu__link--wallet:hover:after{
+  opacity: 1;
+}
+
+.menu__link--wallet:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 45px;
+  left: 62%;
+  transform: translate(-44%,-6%);
+  width: 19px; height: 16px;
+  background: url('../../img/css_sprites.png') -50px -48px;
+  opacity: 0;
+}
+/*****************/
+/*оформление текста ссылко для страниц отзывы и тарифы*/
+
+.menu__link-other {
+  background-repeat: no-repeat;
+  background-position: left center;
+  padding-left: 40px;
   font-size: 12px;
   text-decoration: none;
   display: flex;
   line-height: 20px;
   color: #ec1e79;
 }
-
-.menu__link--main {
-  background-image: url(../../img/main_icon.png);
-}
-
-.menu__link--main.menu__link--active,
-.menu__link--main:hover {
-  background-image: url(../../img/main_icon_black.png);
+.menu__link-other--active,
+.menu__link-other:hover {
+  color: #221f1f;
   transition: .4s;
 }
-
-.menu__link--feed {
-  background-image: url(../../img/feed_icon.png);
+/*ссылка главная для страниц отзывы и тарифы*/
+.menu__link--main-other:before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 1px;
+  left: 30%;
+  transform: translate(-15%,-3%);
+  width: 17px; height: 15px;
+  background: url('../../img/css_sprites.png') -10px -86px;
+}
+.menu__link--main-other:hover:before{
+  opacity: 0;
 }
 
-.menu__link--feed.menu__link--active,
-.menu__link--feed:hover {
-  background-image: url(../../img/feed_icon_black.png);
-  transition: .4s;
+.menu__link--main-other.menu__link--active,
+.menu__link--main-other:hover:after{
+  opacity: 1;
 }
 
-.menu__link--wallet {
-  background-image: url(../../img/wallet_icon.png);
+.menu__link--main-other:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 1px;
+  left: 30%;
+  transform: translate(-15%,-3%);
+  width: 17px; height: 15px;
+  background: url('../../img/css_sprites.png') -47px -86px;
+  opacity: 0;
+}
+/*ссылка отзывы для страниц отзывы и тарифы*/
+
+.menu__link--feed-other:before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 1px;
+  left: 47%;
+  transform: translate(-15%,-18%);
+  width: 20px; height: 18px;
+  background: url('../../img/css_sprites.png') -10px -10px;
+}
+.menu__link--feed-other:hover:before{
+  opacity: 0;
 }
 
-.menu__link--wallet.menu__link--active,
-.menu__link--wallet:hover {
-  background-image: url(../../img/wallet_icon_black.png);
-  transition: .4s;
+.menu__link--feed-other:hover:after{
+  opacity: 1;
 }
 
-.menu__link--active,
-.menu__link:hover {
-  color: black;
-  transition: .4s;
+.menu__link--feed-other:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 1px;
+  left: 47%;
+  transform: translate(-15%,-18%);
+  width: 20px; height: 18px;
+  background: url('../../img/css_sprites.png') -50px -10px;
+  opacity: 0;
 }
 
+/*ссылка тарифы для страниц отзывы и тарифы*/
+
+.menu__link--wallet-other:before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 1px;
+  left: 64%;
+  transform: translate(-44%,-6%);
+  width: 19px; height: 16px;
+  background: url('../../img/css_sprites.png') -50px -48px;
+}
+.menu__link--wallet-other:hover:before{
+  opacity: 0;
+}
+
+.menu__link--wallet-other:hover:after{
+  opacity: 1;
+}
+
+.menu__link--wallet-other:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 1px;
+  left: 64%;
+  transform: translate(-44%,-6%);
+  width: 19px; height: 16px;
+  background: url('../../img/css_sprites.png') -90px -10px;
+  opacity: 0;
+}
+/*******************/
 .site-main {
   max-width: 880px;
   margin-bottom: 70px;
 }
 
 .site-main__inner {
-  position: relative;
-  margin-bottom: 90px;
+  border: solid 1px #e8e9ed;
+  width: 270px;
+  margin-bottom: 30px;
 }
 
 .main-title {
-  font-weight: bold;
-  font-family: Gotha;
   font-size: 49px;
   text-align: left;
   color: #221f1f;
   margin-bottom: 75px;
 }
+.main-title--other {
+  margin-top: 30px;
+  margin-bottom: 45px;
+}
 
 .features {
+}
+
+.box{
   display: flex;
-  list-style-type: none;
-  margin: 0 auto;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 40px;
 }
 
 .features__content {
   text-align: center;
-  width: 210px;
-  margin-right: 70px;
+  width: 190px;
 }
 .features__content:last-child {
   margin-right: 0;
@@ -209,16 +384,16 @@ h5 {
   height: 29px;
 }
 .features__title {
-  font-family: Gotha;
-  font-weight: bold;
   font-size: 11px;
-  letter-spacing: 2.64px;
-  text-align: center;
   color: #212121;
   margin-bottom: 28px;
   text-transform: uppercase;
 }
-
+.features__title--top{
+  font-size: 18px;
+  margin-bottom: 34px;
+  color: #221f1f;
+}
 .block-text {
   text-align: center;
 }
@@ -238,15 +413,12 @@ h5 {
 }
 
 .features__desc {
-  font-family: Gotha;
   font-weight: normal;
-  line-height: 2;
   font-size: 18px;
   color: #221f1f;
   margin-bottom: 10px;
 }
 .features__folder {
-  line-height: 2;
 }
 .block-text-align {
   margin-left: 10px;
@@ -257,6 +429,7 @@ h5 {
   display: flex;
   flex-direction: column;
   margin-bottom: 65px;
+  margin-left: 25px;
 }
 
 .content-news {
@@ -331,7 +504,6 @@ h5 {
 }
 
 .page-navigation__text {
-  font-family: Gotha;
   font-weight: normal;
   font-size: 14px;
   color: #656464;
@@ -342,8 +514,6 @@ h5 {
 }
 
 .page-navigation__pages {
-  font-family: Gotha;
-  font-weight: bold;
   font-size: 14px;
 }
 
@@ -370,6 +540,8 @@ h5 {
 .footer {
   height: 77px;
   background-color: #27273e;
+  overflow: hidden;
+  flex-shrink: 0;
 }
 
 .footer__container {
@@ -385,7 +557,6 @@ h5 {
 
 .footer__text {
   width: 264px;
-  font-family: Gotha;
   font-weight: normal;
   font-size: 14px;
   line-height: 1.29;
@@ -398,17 +569,15 @@ h5 {
 .social-web {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .social-web__text {
-  font-family: Gotha;
-  font-weight: bold;
   font-size: 14px;
   letter-spacing: normal;
   text-align: left;
-  color: #ffffff;
+  color: #221f1f;
   margin-bottom: 10px;
-
 }
 
 .social-web__img {
@@ -421,10 +590,6 @@ h5 {
 .background {
   display: flex;
   width: 20px;
-  height: 20px;
-  line-height: 20px;
-  background-color: #d8d8d8;
-  border-radius: 50%;
   margin-right: 10px;
 }
 
@@ -520,7 +685,6 @@ h5 {
 
 .way-text {
   opacity: 0.8;
-  font-family: Gotha;
   font-weight: 300;
   font-size: 14px;
   line-height: 1.29;
@@ -536,5 +700,67 @@ h5 {
 
 .header-second {
   background-color: #27273e;
-  margin-bottom: 70px;
+  margin-bottom: 40px;
+}
+/*всплывающее окно графика работы*/
+
+.touch__text {
+  margin: 0;
+  font-family: OpenSans;
+  font-size: 14px;
+  font-weight: 700;
+  color: #b12167;
+  text-decoration: underline;
+  cursor: pointer;
+  margin: 3px 3px 0 0;
+  position: relative;
+}
+
+.touch__text:hover {
+  color: #769dcd;
+}
+
+.touch__list {
+  display: none;
+  font-family: 'GothaProLig';
+  font-size: 14px;
+  color: #000;
+  line-height: 1.7;
+  position: absolute;
+  right: 23px;
+  top: 94px;
+  border: 0 solid #000;
+  border-radius: 4px;
+  width: 160px;
+  padding: 8px;
+  box-shadow: 2px 2px 3px 0 #ccc;
+  background: #fff;
+}
+
+.touch__list::before {
+  position: absolute;
+  content: "";
+  border: 8px solid #fff;
+  transform: rotate(-45deg);
+  right: 3px;
+  top: -6px;
+  box-shadow: 2px 0 3px 0 #ccc;
+  z-index: -1;
+}
+
+.touch__block:hover .touch__list {
+  display: block;
+}
+
+.touch__block:after {
+  display: block;
+  content: "";
+  position: absolute;
+  width: 10%;
+  right: 20px;
+  top: 15%;
+}
+.touch__item--color {
+  font-family: 'GothaProBol';
+  color: #ec1e79;
 }
