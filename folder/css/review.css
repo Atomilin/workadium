@@ -1,3 +1,7 @@
+.site-main--review{
+    margin-bottom: 50px;
+}
+
 .avatar__background{
     background-color: #f5f5f5;
     background-image: url(../../img/feed/logo-fig.png);
@@ -6,30 +10,27 @@
     background-position: center center;
 }
 .attention{
-    height: 174px;
+    width: 274px;
     background-image: url(../../img/feed/pattern.png);
     background-position: center center;
-    margin-bottom: 60px;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
 }
 .attention__text{
-    font-family: Gotha;
     font-weight: normal;
     font-size: 18px;
     max-width: 610px;
-    line-height: 1.67;
     letter-spacing: normal;
-    text-align: left;
-    margin: 0 auto;
-    padding: 50px 0;
+    padding: 30px 10px;
     color: #ffffff;
 }
 .attention__text--bold{
-    font-family: Gotha;
     font-weight: bold;
     color: #ec1e79;
 }
 .form{
-    height: 100%;
+    margin-top: 60px;
     width: 100%;
 }
 .form__wrapper{
@@ -37,11 +38,8 @@
     margin: 0 auto;
     background-color: #f5f5f5;
     padding: 50px 70px;
-    margin-bottom: 50px;
 }
 .form__title{
-    font-family: Gotha;
-    font-weight: bold;
     font-size: 49px;
     color: #221f1f;
     margin-bottom: 30px;
@@ -62,7 +60,6 @@
 }
 .form__subtitle{
     display: block;
-    font-family: Gotha;
     font-weight: normal;
     font-size: 14px;
     text-align: left;
@@ -72,7 +69,6 @@
 .form__input{
     outline: none;
     box-sizing: border-box;
-    font-family: Gotha;
     font-weight: normal;
     border: 1px solid transparent;
     background-color: #ffffff;
@@ -104,8 +100,6 @@
     border-radius: 3px;
     background-color: #27273e;
     color: #ffffff;
-    font-family: Gotha;
-    font-weight: bold;
     font-size: 12px;
     text-transform: uppercase;
     letter-spacing: 2.4px;
@@ -166,3 +160,6 @@
 .form__radio--wrap{
     display: flex;
 }
+.menu--other{
+    margin-left: -70px;
+  }

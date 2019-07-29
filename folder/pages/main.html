@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Воркадиум</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <link href="../../node_modules/normalize.css/normalize.css" type="text/css" rel="stylesheet" media="all" />
@@ -22,19 +23,6 @@
                 <div class="logo">
                     <img src="../../img/header_logo.png" alt="Логотип" class="logo-pic">
                 </div>
-                <div class="contacts">
-                    <div class="contacts__phone">
-                        8 (800) 00-392-10
-                    </div>
-                    <div class="contacts__work-time">
-                        График работы
-                    </div>
-                </div>
-                <img src="../../img/header_banner.png" alt="Банер" class="banner" />
-            </div>
-        </header>
-        <div class="site-conteiner">
-            <aside class="sidebar">
                 <nav class="nav">
                     <ul class="menu">
                         <li class="menu__item">
@@ -48,54 +36,65 @@
                         </li>
                     </ul>
                 </nav>
+                <address class="contacts">
+                    <a href="tel:+78000039210" class="contacts__phone">8 (800) 00-392-10</a>
+                    <div class="touch__block">
+                        <p class="touch__text">График работы</p>
+                        <ul class="touch__list">
+                            <li class="touch__item touch__item--color">пн-вс: 09:00-20:00</li>
+                            <li class="touch__item">обед: 14:00-14:30</li>
+                        </ul>
+                    </div>
+                </address>
+                <img src="../../img/header_banner.png" alt="Банер" class="banner" />
+            </div>
+        </header>
+        <div class="site-conteiner">
+            <aside class="sidebar">
+                    <div class="site-main__inner">
+                        <div class="box">
+                            <h2 class="features__title features__title--top">топ-тариф</h2>
+                            <h2 class="features__title">уникальность</h2>
+                            <ul class="features">
+                                <li class="features__content">
+                                    <span class="features__desc">Создан для вашего комфортного отдыха</span>
+                                    <ul class="features__folder">
+                                        <li class="features__desc folder__li">Кофе/чай</li>
+                                        <li class="features__desc folder__li">Шкаф (5кг)</li>
+                                        <li class="features__desc folder__li">Рабочее место</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="social-web">
+                        <div class="social-web__text"> Наши социальные сети
+                        </div>
+                        <ul class="social-web__img">
+                            <li class="background">
+                                <a href="#" class="link link--vk link--active" alt="Ссылка на группу в Вконтакте">Вконтакте</a>
+                            </li>
+                            <li class="background">
+                                <a href="#" class="link link--fb" alt="Ссылка на группу в Фейсбуке">Фейсбук</a>
+                            </li>
+                            <li class="background">
+                                <a href="#" class="link link--g" alt="Ссылка на группу в гугл+">Гугл+ </a>
+                            </li>
+                            <li class="background">
+                                <a href="#" class="link link--tw" alt="Ссылка на группу в Твиттер">Твиттер</a>
+                            </li>
+                            <li class="background">
+                                <a href="#" class="link link--email" alt="Ссылка на электронную почту">Электронная почта</a>
+                            </li>
+                        </ul>
+                    </div>
             </aside>
             <main class="site-main">
-                <div class="site-main__inner">
-                    <h1 class="main-title">Особенности</h1>
-                    <ul class="features">
-                        <li class="features__content">
-                            <div class="features__image">
-                                <img class="image--flower" src="../../img/flower.png" alt="изображение предложения" />
-                            </div>
-                            <h2 class="features__title">уникальность</h2>
-                            <span class="features__desc">Создан для вашего комфортного отдыха</span>
-                            <ul class="features__folder">
-                                <li class="features__desc folder__li">Кофе/чай</li>
-                                <li class="features__desc folder__li">Шкаф (5кг)</li>
-                                <li class="features__desc folder__li">Рабочее место</li>
-                            </ul>
-                        </li>
-                        <li class="features__content">
-                                <div class="features__image">
-                                        <img class="image--star" src="../../img/star.png" alt="изображение предложения" />
-                                </div>
-                            <h2 class="features__title">преимум-класс</h2>
-                            <span class="features__desc">Для любителей хороших впечатлений</span>
-                            <ul class="features__folder">
-                                <li class="features__desc folder__li">Обед+кофе</li>
-                                <li class="features__desc folder__li">Шкаф (10кг)</li>
-                                <li class="features__desc folder__li">Детское кресло</li>
-                            </ul>
-                        </li>
-                        <li class="features__content">
-                                <div class="features__image">
-                                        <img class="image--paint" src="../../img/paint.png" alt="изображение предложения"/>
-                                </div>
-                            <h2 class="features__title">лакшери-стулья</h2>
-                            <span class="features__desc">Всё самое лучщее и незабываемое</span>
-                            <ul class="features__folder">
-                                <li class="features__desc folder__li">Джакузи</li>
-                                <li class="features__desc folder__li">Шкаф (15кг)</li>
-                                <li class="features__desc folder__li">Табуретка</li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
                 <selection class="site-main__content">
                     <h1 class="main-title">Последние новости</h1>
                     <div class="content-news">
                         <div class="content-news__avatar">
-                            <img class="avatar-pic" src="../../img/black_hole.png" alt="изображение новости">
+                            <img class="avatar-pic" src="../../img/black_hole.jpg" alt="изображение новости">
                         </div>
                         <div class="text">
                             <div class="text__data">12.10.2016
@@ -111,7 +110,7 @@
                     </div>
                     <div class="content-news">
                         <div class="content-news__avatar">
-                            <img class="avatar-pic" src="../../img/separatist.png" alt="изображение новости">
+                            <img class="avatar-pic" src="../../img/separatist.jpg" alt="изображение новости">
                         </div>
                         <div class="text">
                             <div class="text__data">01.02.2016
@@ -127,7 +126,7 @@
                     </div>
                     <div class="content-news">
                         <div class="content-news__avatar">
-                            <img class="avatar-pic" src="../../img/major.png" alt="изображение новости">
+                            <img class="avatar-pic" src="../../img/major.jpg" alt="изображение новости">
                         </div>
                         <div class="text">
                             <div class="text__data">22.12.2015
@@ -167,27 +166,6 @@
                     работы: <b>Прохладов Вадим</b>
                 </div>
                 <img src="../../img/header_logo.png" alt="Логотип"/>
-                <div class="social-web">
-                    <div class="social-web__text"> Наши социальные сети
-                    </div>
-                    <ul class="social-web__img">
-                        <li class="background">
-                            <a href="#" class="link link--vk link--active" alt="Ссылка на группу в Вконтакте">Вконтакте</a>
-                        </li>
-                        <li class="background">
-                            <a href="#" class="link link--fb" alt="Ссылка на группу в Фейсбуке">Фейсбук</a>
-                        </li>
-                        <li class="background">
-                            <a href="#" class="link link--g" alt="Ссылка на группу в гугл+">Гугл+ </a>
-                        </li>
-                        <li class="background">
-                            <a href="#" class="link link--tw" alt="Ссылка на группу в Твиттер">Твиттер</a>
-                        </li>
-                        <li class="background">
-                            <a href="#" class="link link--email" alt="Ссылка на электронную почту">Электронная почта</a>
-                        </li>
-                    </ul>
-                </div>
             </div>
         </footer>
     </div>
